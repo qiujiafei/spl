@@ -26,7 +26,7 @@ foreach ($iterator as $key => $value) {
 echo PHP_EOL;
 echo "===while 循环===\n";    //和遍历链表差不多
 
-$iterator->rewind();    //刚开是这里忘写了， 调用 current 之前一定要初始化指针位置
+$iterator->rewind();    //刚开始这里忘写了， 调用 current 之前一定要初始化指针位置
 while($iterator->valid()) {
     echo $iterator->key() . " => " . $iterator->current() . PHP_EOL;
     $iterator->next();
